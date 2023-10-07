@@ -1,4 +1,4 @@
-package io.devexpert.desafioarquitecturas
+package io.devexpert.desafioarquitecturas.data.remote
 
 data class MovieResult(
     val page: Int,

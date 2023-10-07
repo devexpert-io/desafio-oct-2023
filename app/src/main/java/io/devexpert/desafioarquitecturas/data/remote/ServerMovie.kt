@@ -1,4 +1,6 @@
-package io.devexpert.desafioarquitecturas
+package io.devexpert.desafioarquitecturas.data.remote
+
+import io.devexpert.desafioarquitecturas.data.Movie
 
 data class ServerMovie(
     val adult: Boolean,
@@ -16,4 +18,12 @@ data class ServerMovie(
     val vote_average: Double,
     val vote_count: Int,
     val favorite: Boolean = false
+)
+
+fun ServerMovie.toMovie() = Movie(
+    id = 0,
+    title = title,
+    overview = overview,
+    posterPath = poster_path,
+    favorite = favorite
 )

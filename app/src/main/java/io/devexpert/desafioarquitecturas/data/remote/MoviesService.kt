@@ -1,4 +1,4 @@
-package io.devexpert.desafioarquitecturas
+package io.devexpert.desafioarquitecturas.data.remote
 
 import retrofit2.http.GET
 
